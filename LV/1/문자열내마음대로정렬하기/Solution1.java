@@ -2,9 +2,7 @@ package LV1.문자열내마음대로정렬하기;
 
 
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.Collections;
-import java.util.Comparator;
 
 public class Solution1 {
     public String[] solution(String[] strings, int n) {

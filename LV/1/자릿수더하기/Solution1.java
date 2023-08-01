@@ -1,8 +1,5 @@
 package LV1.자릿수더하기;
 
-import java.util.Arrays;
-import java.util.stream.Stream;
-
 public class Solution1 {
     public int solution(int n) {
         int answer = 0;
