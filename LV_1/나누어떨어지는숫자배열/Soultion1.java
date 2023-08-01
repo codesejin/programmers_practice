@@ -1,4 +1,4 @@
-package LV1.나누어떨어지는숫자배열;
+package LV_1.나누어떨어지는숫자배열;
 
 import java.util.ArrayList;
 import java.util.Arrays;

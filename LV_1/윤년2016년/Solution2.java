@@ -1,4 +1,4 @@
-package LV1.윤년2016년;
+package LV_1.윤년2016년;
 
 public class Solution2 {
 

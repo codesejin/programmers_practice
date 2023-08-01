@@ -1,4 +1,4 @@
-package LV1.같은숫자는싫어;
+package LV_1.같은숫자는싫어;
 
 import java.util.*;
 
