@@ -3,6 +3,8 @@ package LV_1.같은숫자는싫어;
 import java.util.*;
 
 public class Solution1 {
+
+    // queue 풀이
     public int[] solution(int[] arr) {
 
         // 정확성 71.9, 효율성 : 28.1
