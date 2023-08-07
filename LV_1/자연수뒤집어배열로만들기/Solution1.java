@@ -11,7 +11,6 @@ public class Solution1 {
         for (int i = strings.length - 1; i >= 0; i--) {
             answer[idx++] = Integer.parseInt(strings[i]);
         }
-
         return answer;
     }
 
