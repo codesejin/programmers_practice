@@ -1,0 +1,21 @@
+package LV_0.가운데글자가져오기;
+
+public class Solution {
+
+    public String solution(String s) {
+        String answer = "";
+
+        int length = s.length();
+        if (length % 2 == 0) {
+            answer = s.substring((length/2)-1,(length/2)+1);
+        }else {
+            answer = s.substring(s.length()/2,s.length()/2+1);
+        }
+        return answer;
+    }
+    public static void main(String[] args) {
+        Solution s = new Solution();
+        String str = "abcde";
+        System.out.println(s.solution(str));
+    }
+}

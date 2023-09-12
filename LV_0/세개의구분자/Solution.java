@@ -27,6 +27,8 @@ public class Solution {
             String[] answer = {"EMPTY"};
             return answer;
         }
+        // 리스트를 배열로 만들어주기 위함
+        // list.toArray하면 Object[]로 반환되는데.. 다른 간단한 방법없을까?
         int idx = 0;
         String[] answer = new String[list.size()];
         for (int i = 0; i < list.size(); i++) {
