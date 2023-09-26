@@ -6,12 +6,15 @@ import java.util.stream.Collectors;
 
 public class Solution1 {
     public String solution(String s) {
-        String answer = "";
-
+        StringBuilder sb = new StringBuilder();
         String[] splitStr = s.split("");
         Arrays.sort(splitStr, Collections.reverseOrder());
-
+        System.out.println(Arrays.toString(splitStr));
         return Arrays.stream(splitStr).collect(Collectors.joining());
+//        for (int i = 0; i < splitStr.length ; i++) {
+//            sb.append(splitStr[i]);
+//        }
+//        return sb.toString();
     }
 
     public static void main(String[] args) {
