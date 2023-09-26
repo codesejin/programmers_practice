@@ -19,10 +19,8 @@ public class Solution {
         }
         // 최소 최대 인뎃스 사이의 값 List에 저장
         List<Integer> integerList = new ArrayList<>();
-        for (int i = 0; i < len; i++) {
-            if (i >= minIndex && i <= maxIndex) {
-                integerList.add(arr[i]);
-            }
+        for (int i = minIndex ; i <= maxIndex; i++) {
+            integerList.add(arr[i]);
         }
         // list가 비었을 경우 -1 반환
         if (integerList.isEmpty()) {
