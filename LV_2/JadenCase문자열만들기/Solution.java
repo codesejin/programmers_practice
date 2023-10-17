@@ -1,6 +1,5 @@
 package LV_2.JadenCase문자열만들기;
 
-import java.util.Arrays;
 
 public class Solution {
     public String solution(String s) {
