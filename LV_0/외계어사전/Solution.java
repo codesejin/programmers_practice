@@ -11,6 +11,7 @@ public class Solution {
                     allCheck = false;
                     break;
                 }
+                k.charAt()
             }
             if (allCheck) answer = 1;
         }
