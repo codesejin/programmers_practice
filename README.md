@@ -3,7 +3,7 @@
 
 이 레포지토리는 프로그래머스의 0단계, 1단계, 2단계, 3단계 문제를 전부 다 푸는 것을 목표로 합니다.
 
-<img width="1352" alt="image" src="https://github.com/codesejin/programmers_practice/assets/101460733/33320de3-78fc-4d5e-89f0-fe7bc152c061">
+![image](https://github.com/codesejin/programmers_practice/assets/101460733/46e23ef7-adc4-40ce-97b9-284fc51237d9)
 
 대표 풀이는 추후 업데이트 예정
 
