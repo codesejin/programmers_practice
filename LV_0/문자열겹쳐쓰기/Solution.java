@@ -2,6 +2,7 @@ package LV_0.문자열겹쳐쓰기;
 
 public class Solution {
     public String solution(String my_string, String overwrite_string, int s) {
+        // 첫번째 풀이
 //        StringBuilder sb = new StringBuilder();
 //        int idx = 0;
 //        for (int i = 0; i < my_string.length(); i++) {
@@ -9,9 +10,16 @@ public class Solution {
 //            else sb.append(my_string.charAt(i));
 //        }
 //        return sb.toString();
-        String before = my_string.substring(0, s);
-        String after = my_string.substring(s + overwrite_string.length());
-        return before + overwrite_string + after;
+        // 다른 사람 풀이
+//        String before = my_string.substring(0, s);
+//        String after = my_string.substring(s + overwrite_string.length());
+//        return before + overwrite_string + after;
+        // 두번째 풀이
+        StringBuilder sb = new StringBuilder();
+        sb.append(my_string.substring(0, s))
+                .append(overwrite_string)
+                .append(my_string.substring(s+overwrite_string.length()));
+        return sb.toString();
     }
 
     public static void main(String[] args) {
