@@ -11,6 +11,10 @@ public class Solution1 {
                 ch = (char) ((ch - 'a' + n) % 26 + 'a');
             } else if (Character.isUpperCase(ch)) {
                 ch = (char) ((ch - 'A' + n) % 26 + 'A');
+                System.out.println(ch - 'A');
+                System.out.println(2 + 'A');
+                System.out.println(ch + 'A');
+                System.out.println((ch + 'A') % 26);
             }
             result += ch;
         }
@@ -28,6 +32,6 @@ public class Solution1 {
         String s3 = "a B z";
         int n3 = 4;
 
-        solution1.solution(s3, n3);
+        System.out.println(solution1.solution(s1, n1));
     }
 }

@@ -7,9 +7,13 @@ public class Solution {
         int vMax = Integer.MIN_VALUE; // 수직
         for (int i = 0; i < sizes.length; i++) {
             int h = Math.min(sizes[i][0], sizes[i][1]);
+            System.out.println("h : " + h);
             int v = Math.max(sizes[i][0], sizes[i][1]);
+            System.out.println("v : " + v);
             hMax=Math.max(hMax,h);
+            System.out.println("hMax : " + hMax);
             vMax=Math.max(vMax,v);
+            System.out.println("vMax : " + vMax);
         }
         return vMax*hMax;
     }
