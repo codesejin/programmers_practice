@@ -2,7 +2,6 @@ package LV_1.완주하지못한선수;
 
 
 import java.util.HashMap;
-import java.util.HashSet;
 
 public class Solution {
     public String solution(String[] participant, String[] completion) {
