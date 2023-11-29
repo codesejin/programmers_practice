@@ -18,4 +18,7 @@
 
 ### 2단계
 
-[3단계 PS 모음](https://github.com/codesejin/programmers_practice/tree/master/LV_2)
+[2단계 PS 모음](https://github.com/codesejin/programmers_practice/tree/master/LV_2)
+
+### 3단계
+[3단계 PS 모음](https://github.com/codesejin/programmers_practice/tree/master/LV_3)
