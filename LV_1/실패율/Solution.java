@@ -42,8 +42,8 @@ public class Solution {
                     maxIdx = j; // 실패율이 가장 높은 스테이지 번호 갱신
                 }
             }
-            answer[i] = maxIdx + 1;
-            failRate[maxIdx] = -1;
+            answer[i] = maxIdx + 1; // 실패율이 가장 높은 스테이지 번호를 정답 배열에 담기
+            failRate[maxIdx] = -1; // 실패율이 가장 높은 스테이지 번호를 -1로 초기화
         }
 
         return answer;
