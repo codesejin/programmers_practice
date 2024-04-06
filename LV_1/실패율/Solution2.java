@@ -3,27 +3,33 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 public class Solution2 {
-    public int[] solution(int N, int[] lastStages) {
-        int nPlayers = lastStages.length;
-        int[] nStagePlayers = new int[N + 2];
-        for (int stage : lastStages) {
+    public static void main(String[] args) {
+        int N = 5; // 전체 스테이지의 개수
+        int[] stages = {2, 1, 2, 6, 2, 4, 3, 3};// 현재 멈춰있는 스테이지의 번호가 담긴 배열
+        System.out.println(new Solution2().solution(N, stages));
+    }
+
+    public int[] solution(int N, int[] stages) {
+        int nPlayers = stages.length;
+        int[] nStagePlayers = new int[N + 2]; // zero based index, stagesQODUFDP 6이 있기 때문에  +1
+        for (int stage : stages) {
             nStagePlayers[stage] += 1;
         }
 
         int remainingPlayers = nPlayers;
-        List<Stage> stages = new ArrayList<>();
+        List<Stage> stageList = new ArrayList<>();
         for (int id = 1 ; id <= N; id++) {
             double failure = (double) nStagePlayers[id] / remainingPlayers;
             remainingPlayers -= nStagePlayers[id];
 
             Stage s = new Stage(id, failure);
-            stages.add(s);
+            stageList.add(s);
         }
-        Collections.sort(stages, Collections.reverseOrder());
+        Collections.sort(stageList, Collections.reverseOrder());
 
         int[] answer = new int[N];
         for (int i = 0; i < N; i++) {
-            answer[i] = stages.get(i).id;
+            answer[i] = stageList.get(i).id;
         }
         return answer;
     }
