@@ -11,7 +11,7 @@ public class Solution2 {
 
     public int[] solution(int N, int[] stages) {
         int nPlayers = stages.length;
-        int[] nStagePlayers = new int[N + 2]; // zero based index, stagesQODUFDP 6이 있기 때문에  +1
+        int[] nStagePlayers = new int[N + 2]; // zero based index, stages배열에 6이 있기 때문에  +1
         for (int stage : stages) {
             nStagePlayers[stage] += 1;
         }
