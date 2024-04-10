@@ -1,26 +1,24 @@
 package LV_1.이상한문자만들기;
 
-import java.util.Arrays;
-import java.util.stream.Collectors;
-
 public class Solution {
 
     public String solution(String s) {
         String answer = "";
-        String[] split = s.split("");
-
-        int idx = 0;
-        for (int i = 0; i < split.length; i++) {
-            if (split[i].equals(" ")) {
-                idx = 0;
-            } else if (idx % 2 == 0) {
-                split[i] = split[i].toUpperCase();
-                idx++;
+        int num = 0;
+        for (int i = 0; i < s.length(); i++) {
+            char target = s.charAt(i);
+            if(Character.isAlphabetic(target)) {
+                if(num % 2 == 0) {
+                    answer += Character.toUpperCase(target);
+                    num++;
+                } else {
+                    answer += Character.toLowerCase(target);
+                    num++;
+                }
             } else {
-                split[i] = split[i].toLowerCase();
-                idx++;
+                answer += target;
+                num = 0;
             }
-            answer += split[i];
         }
         return answer;
     }
